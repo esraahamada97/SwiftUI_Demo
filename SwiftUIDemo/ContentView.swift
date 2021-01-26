@@ -13,7 +13,7 @@ struct ContentView: View {
             Image("bg_header-shape")
                 .resizable()
                 .frame(width: UIScreen.main.bounds.width, height: 219)
-                   
+             
             Image("ic_Monshaat-Logo")
                 .offset( y: -130)
                 .padding(.trailing, 24)
@@ -21,8 +21,10 @@ struct ContentView: View {
             Text("آهلا بك")
                 .foregroundColor(Color(.titleTextColor))
                 .font(.largeTitle)
+                .fontWeight(.bold)
                 .padding(.trailing, 24)
                 .offset(y: -20)
+                
             
             Text("يمكنك تسجيل الدخول بإستخدام معلومات الحساب لدي وزارة التجارة و الإستثمار")
                 .foregroundColor(Color(.titleTextColor))
@@ -30,15 +32,18 @@ struct ContentView: View {
                 .padding(.top, 15)
                 .multilineTextAlignment(.trailing)
                 .lineSpacing(12)
+            
             Spacer().frame(height: 24)
+            
             Button(action: {
                 print("login")
             }, label: {
                 Text("تسجيل")
-                    .font(.title)
+                    .font(.system(size: 21))
                     .foregroundColor(Color(.primaryColor))
+                    .fontWeight(.bold)
+                    
             })
-            
             .frame(width: UIScreen.main.bounds.width - 50 , height: 48, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
             .background(Color(.secondryColor))
             .cornerRadius(24)
@@ -49,16 +54,18 @@ struct ContentView: View {
                 
             }, label: {
                 Text("أكمل كزائر")
-                    .font(.title)
+                    .font(.system(size: 22))
                     .foregroundColor(Color(.titleTextColor))
+                
             })
             
             .frame(width: UIScreen.main.bounds.width - 50 , height: 48, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
             .background(Color(.primaryColor))
-            .cornerRadius(24)
             .padding()
             
+            Spacer()
         }
+
         .ignoresSafeArea()
     }
 }

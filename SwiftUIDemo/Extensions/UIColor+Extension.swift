@@ -28,4 +28,11 @@ extension UIColor {
          }
          return color
      }
+    
+    class var rectangleColor: UIColor {
+         guard let color = UIColor(named: "RectangleColor") else {
+             return UIColor()
+         }
+         return color
+     }
 }

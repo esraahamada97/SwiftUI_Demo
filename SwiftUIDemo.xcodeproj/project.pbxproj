@@ -18,6 +18,9 @@
 		CE83CC4225BFF91500DA3DB1 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE83CC4125BFF91500DA3DB1 /* Colors.xcassets */; };
 		CE83CC5025BFFAC200DA3DB1 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE83CC4F25BFFAC200DA3DB1 /* UIColor+Extension.swift */; };
 		CEC6C7FA25C82435004F44D3 /* ProfileScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC6C7F925C82435004F44D3 /* ProfileScreenView.swift */; };
+		CEC6C7FF25C826E1004F44D3 /* 29LT Azer-Bold.OTF in Resources */ = {isa = PBXBuildFile; fileRef = CEC6C7FE25C826E1004F44D3 /* 29LT Azer-Bold.OTF */; };
+		CEC6C80525C82706004F44D3 /* 29LT Azer-Medium.OTF in Resources */ = {isa = PBXBuildFile; fileRef = CEC6C80325C82706004F44D3 /* 29LT Azer-Medium.OTF */; };
+		CEC6C80625C82706004F44D3 /* 29LT Azer-Regular.OTF in Resources */ = {isa = PBXBuildFile; fileRef = CEC6C80425C82706004F44D3 /* 29LT Azer-Regular.OTF */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +58,9 @@
 		CE83CC4125BFF91500DA3DB1 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		CE83CC4F25BFFAC200DA3DB1 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		CEC6C7F925C82435004F44D3 /* ProfileScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScreenView.swift; sourceTree = "<group>"; };
+		CEC6C7FE25C826E1004F44D3 /* 29LT Azer-Bold.OTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "29LT Azer-Bold.OTF"; sourceTree = "<group>"; };
+		CEC6C80325C82706004F44D3 /* 29LT Azer-Medium.OTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "29LT Azer-Medium.OTF"; sourceTree = "<group>"; };
+		CEC6C80425C82706004F44D3 /* 29LT Azer-Regular.OTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "29LT Azer-Regular.OTF"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +185,9 @@
 		CEC6C7F325C823BD004F44D3 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				CEC6C80325C82706004F44D3 /* 29LT Azer-Medium.OTF */,
+				CEC6C80425C82706004F44D3 /* 29LT Azer-Regular.OTF */,
+				CEC6C7FE25C826E1004F44D3 /* 29LT Azer-Bold.OTF */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -328,10 +337,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEC6C7FF25C826E1004F44D3 /* 29LT Azer-Bold.OTF in Resources */,
 				CE83CC1225BFEB2D00DA3DB1 /* LaunchScreen.storyboard in Resources */,
 				CE83CC4225BFF91500DA3DB1 /* Colors.xcassets in Resources */,
 				CE83CC0F25BFEB2D00DA3DB1 /* Preview Assets.xcassets in Resources */,
+				CEC6C80525C82706004F44D3 /* 29LT Azer-Medium.OTF in Resources */,
 				CE83CC0C25BFEB2D00DA3DB1 /* Assets.xcassets in Resources */,
+				CEC6C80625C82706004F44D3 /* 29LT Azer-Regular.OTF in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

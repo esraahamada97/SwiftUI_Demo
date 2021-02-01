@@ -51,9 +51,16 @@ struct ProfileScreenView: View {
                            HStack(alignment: .top, spacing: 12, content: {
                                Text("معلوماتك")
                                    .foregroundColor(Color(.primaryColor))
+                                .fontWeight(.bold)
+                                .font(.custom("29LT Azer-Bold", size: 22))
+                                .padding(.leading, 270)
+                            Rectangle()
+                                .fill(Color(.rectangleColor))
+                                .frame(width: 4, height: 23)
                                
-                               Text("Placeholder11111")
-                           })
+                            
+                           }) .offset( y:  -383)
+                           
                        
                        }
                    }

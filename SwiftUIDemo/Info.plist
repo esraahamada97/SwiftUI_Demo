@@ -58,5 +58,11 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>29LT Azer-Medium</string>
+		<string>29LT Azer-Regular</string>
+		<string>29LT Azer-Bold</string>
+	</array>
 </dict>
 </plist>

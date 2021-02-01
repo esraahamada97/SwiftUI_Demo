@@ -35,4 +35,11 @@ extension UIColor {
          }
          return color
      }
+   
+    class var screenleColor: UIColor {
+         guard let color = UIColor(named: "ScreenColor") else {
+             return UIColor()
+         }
+         return color
+     }
 }

@@ -15,19 +15,17 @@ struct ProfileScreenView: View {
     
     var body: some View {
         ZStack {
-               
+            Color(.screenleColor)
+                            .ignoresSafeArea()
                    NavigationView {
+                    
                        ZStack {
-                           Image(systemName: "person.2.fill")
-                               .resizable()
-                               .aspectRatio(contentMode: .fill)
-                               .frame(width: 370, height: 200)
-                               .cornerRadius(20.0)
                            
+                        Color(.screenleColor).ignoresSafeArea()
                            Image("bg_header-shape")
                                .resizable()
-                               .frame(width: UIScreen.main.bounds.width, height: 219)
-                               .offset( y:  -395)
+                               .frame(width: UIScreen.main.bounds.width, height: 245)
+                               .offset( y:  -380)
                            
                            Spacer()
                                .navigationBarItems(
@@ -61,7 +59,13 @@ struct ProfileScreenView: View {
                             
                            }) .offset( y:  -383)
                            
-                       
+                        ZStack {
+                            Color(.primaryColor)
+                                            .ignoresSafeArea()
+                            
+                        }.frame(width: 345, height: 620)
+                        .cornerRadius(16)
+                        .offset( y:  -23)
                        }
                    }
                    

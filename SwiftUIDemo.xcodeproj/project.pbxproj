@@ -21,6 +21,7 @@
 		CEC6C7FF25C826E1004F44D3 /* 29LT Azer-Bold.OTF in Resources */ = {isa = PBXBuildFile; fileRef = CEC6C7FE25C826E1004F44D3 /* 29LT Azer-Bold.OTF */; };
 		CEC6C80525C82706004F44D3 /* 29LT Azer-Medium.OTF in Resources */ = {isa = PBXBuildFile; fileRef = CEC6C80325C82706004F44D3 /* 29LT Azer-Medium.OTF */; };
 		CEC6C80625C82706004F44D3 /* 29LT Azer-Regular.OTF in Resources */ = {isa = PBXBuildFile; fileRef = CEC6C80425C82706004F44D3 /* 29LT Azer-Regular.OTF */; };
+		CEC6C81125C8490F004F44D3 /* UserImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC6C81025C8490F004F44D3 /* UserImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		CEC6C7FE25C826E1004F44D3 /* 29LT Azer-Bold.OTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "29LT Azer-Bold.OTF"; sourceTree = "<group>"; };
 		CEC6C80325C82706004F44D3 /* 29LT Azer-Medium.OTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "29LT Azer-Medium.OTF"; sourceTree = "<group>"; };
 		CEC6C80425C82706004F44D3 /* 29LT Azer-Regular.OTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "29LT Azer-Regular.OTF"; sourceTree = "<group>"; };
+		CEC6C81025C8490F004F44D3 /* UserImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -230,6 +232,7 @@
 			isa = PBXGroup;
 			children = (
 				CEC6C7F925C82435004F44D3 /* ProfileScreenView.swift */,
+				CEC6C81025C8490F004F44D3 /* UserImageView.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -371,6 +374,7 @@
 				CE83CC0625BFEB2B00DA3DB1 /* AppDelegate.swift in Sources */,
 				CE83CC0825BFEB2B00DA3DB1 /* SceneDelegate.swift in Sources */,
 				CE83CC0A25BFEB2B00DA3DB1 /* ContentView.swift in Sources */,
+				CEC6C81125C8490F004F44D3 /* UserImageView.swift in Sources */,
 				CE83CC5025BFFAC200DA3DB1 /* UIColor+Extension.swift in Sources */,
 				CEC6C7FA25C82435004F44D3 /* ProfileScreenView.swift in Sources */,
 			);

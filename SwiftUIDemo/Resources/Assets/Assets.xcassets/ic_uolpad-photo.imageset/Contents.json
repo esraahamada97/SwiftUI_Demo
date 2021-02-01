@@ -1,17 +1,15 @@
 {
   "images" : [
     {
-      "filename" : "ic_uolpad-photo.png",
+      "filename" : "icons8-camera-24.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "ic_uolpad-photo@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "ic_uolpad-photo@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

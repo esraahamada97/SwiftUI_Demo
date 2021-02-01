@@ -173,7 +173,6 @@
 		CEC6C7F125C8239D004F44D3 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				CEC6C82325C85A57004F44D3 /* Locale */,
 				CEC6C7F325C823BD004F44D3 /* Fonts */,
 				CEC6C7F225C823B2004F44D3 /* Assets */,
 				CE83CC3825BFF8E400DA3DB1 /* Colors */,
@@ -242,13 +241,6 @@
 				CEC6C81E25C8580C004F44D3 /* UserInfo.swift */,
 			);
 			path = Profile;
-			sourceTree = "<group>";
-		};
-		CEC6C82325C85A57004F44D3 /* Locale */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Locale;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

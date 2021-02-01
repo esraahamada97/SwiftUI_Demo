@@ -49,4 +49,10 @@ extension UIColor {
          }
          return color
      }
+    class var separatorColor: UIColor {
+         guard let color = UIColor(named: "SeparatorColor") else {
+             return UIColor()
+         }
+         return color
+     }
 }

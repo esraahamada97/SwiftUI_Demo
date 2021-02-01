@@ -35,7 +35,7 @@ struct UserInfoView: View {
             ForEach(results) { result in
                         Text(result.textDta)
                             .foregroundColor(Color(.titleTextColor))
-                            .font(.custom("29LT Azer-Regular.", size: 17))
+                            .font(.custom("29LT Azer-Regular", size: 17))
                     
             }
             })

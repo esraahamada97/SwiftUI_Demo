@@ -59,15 +59,37 @@ struct ProfileScreenView: View {
                             
                            }) .offset( y:  -383)
                            
+                        
                         ZStack {
                             Color(.primaryColor)
                                             .ignoresSafeArea()
+                            
+                               
+                                
+                                
                             
                         }.frame(width: 345, height: 620)
                         .cornerRadius(16)
                         .offset( y:  -23)
                         .shadow(color: Color(.shadowColor), radius: 4)
-                       }
+                        
+                        ZStack {
+                            Color.pink
+                        Image("ic_avatar-bg")
+                            .padding(.bottom, 600)
+                       
+                            
+                            RoundedRectangle(cornerRadius: 8, style: .continuous)
+                        .fill(Color(.secondryColor))
+                        .frame(width: 30, height: 30)
+                        .padding(.bottom, 505)
+                
+                        
+                            
+                            
+                        }.frame(width: 100, height: 50)
+                   }
+                    
                    }
                    
                    

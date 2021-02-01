@@ -12,18 +12,20 @@ struct UserImageView: View {
         ZStack {
             
         Image("ic_avatar-bg")
-            .padding(.bottom, 600)
+            //.padding(.bottom, 600)
        
             
-            RoundedRectangle(cornerRadius: 8, style: .continuous)
+        RoundedRectangle(cornerRadius: 8, style: .continuous)
         .fill(Color(.secondryColor))
         .frame(width: 30, height: 30)
-        .padding(.bottom, 505)
+        .padding(.top, 90)
             
             Image("ic_uolpad-photo")
-                .padding(.bottom, 505)
+                .padding(.top, 90)
     
         }.frame(width: 100, height: 100)
+        .padding(.bottom, 480)
+        
     }
 }
 

@@ -9,62 +9,48 @@ import SwiftUI
 
 struct ProfileScreenView: View {
     init() {
-            
-            UINavigationBar.appearance().backgroundColor = .clear
-        }
+        
+        UINavigationBar.appearance().backgroundColor = .clear
+    }
     
     var body: some View {
-        ZStack {
-            Color(.screenleColor)
-                            .ignoresSafeArea()
-                   NavigationView {
+        NavigationView {
+            
+            ScrollView {
+                
+                ZStack {
+                    Color(.screenleColor).ignoresSafeArea()
                     
-                       ZStack {
-                           
-                        Color(.screenleColor).ignoresSafeArea()
-                           Image("bg_header-shape")
-                               .resizable()
-                               .frame(width: UIScreen.main.bounds.width, height: 245)
-                               .offset( y:  -380)
-                           
-                           Spacer()
-                               .navigationBarItems(
-                                   leading:
-                                       Button(action: {
-                                           print("button pressed")
-                                           
-                                       }) {
-                                           Image("ic_edit")
-                                               .frame(width: 30, height: 30)
-                                       },
-                                   trailing:
-                                       Button(action: {
-                                           print("button pressed")
-                                           
-                                       }) {
-                                           Image("ic_back-arrow")
-                                               .frame(width: 30, height: 30)
-                                       }
-                               )
-                           HStack(alignment: .top, spacing: 12, content: {
-                               Text("معلوماتك")
-                                   .foregroundColor(Color(.primaryColor))
+                    ZStack {
+                        
+                        Image("bg_header-shape")
+                            .resizable()
+                            .frame(width: UIScreen.main.bounds.width, height: 230)
+                            .padding(.bottom, 680)
+                        
+                        Spacer()
+                        
+                        
+                        HStack(alignment: .top, spacing: 12, content: {
+                            Text("معلوماتك")
+                                .foregroundColor(Color(.primaryColor))
                                 .fontWeight(.bold)
                                 .font(.custom("29LT Azer-Bold", size: 22))
                                 .padding(.leading, 270)
+                            
                             Rectangle()
                                 .fill(Color(.rectangleColor))
                                 .frame(width: 4, height: 23)
-                               
                             
-                           }) .offset( y:  -383)
-                           
+                            
+                        }) .padding(.bottom, 650)
+                        
                         
                         ZStack {
                             Color(.primaryColor).ignoresSafeArea()
                             
-                                UserInfoView()
-                           
+                            UserInfoView()
+                            
                             Rectangle()
                                 .fill(Color(.secondryColor))
                                 .frame(width: 317, height: 0.34)
@@ -82,7 +68,7 @@ struct ProfileScreenView: View {
                                     .font(.custom("29LT Azer-Regular", size: 15))
                                     .multilineTextAlignment(.trailing)
                                     .lineSpacing(4)
-                               
+                                
                                 
                             }).padding(.top, 300)
                             .padding(.leading, 30)
@@ -93,27 +79,42 @@ struct ProfileScreenView: View {
                             
                         }.frame(width: 345, height: 620)
                         .cornerRadius(16)
-                        .offset( y:  -23)
+                        .padding(.top, 80)
                         .shadow(color: Color(.shadowColor), radius: 4)
                         
                         UserImageView()
                         
                         
-                   }
+                    }
                     
-                   }
-                   
-                   
-                   
-               }
-               
-               .ignoresSafeArea()
-
+                }
+            }
+            .navigationBarItems(
+                leading:
+                    Button(action: {
+                        print("button pressed")
+                        
+                    }) {
+                        Image("ic_edit")
+                            .frame(width: 30, height: 30)
+                    },
+                trailing:
+                    Button(action: {
+                        print("button pressed")
+                        
+                    }) {
+                        Image("ic_back-arrow")
+                            .frame(width: 30, height: 30)
+                    }
+            )
+            .ignoresSafeArea()
+        }
     }
 }
 
 struct ProfileScreenView_Previews: PreviewProvider {
     static var previews: some View {
+        
         ProfileScreenView()
     }
 }

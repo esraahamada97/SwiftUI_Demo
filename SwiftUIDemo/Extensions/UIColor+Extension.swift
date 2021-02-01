@@ -42,4 +42,11 @@ extension UIColor {
          }
          return color
      }
+    
+    class var shadowColor: UIColor {
+         guard let color = UIColor(named: "ShadowColor") else {
+             return UIColor()
+         }
+         return color
+     }
 }

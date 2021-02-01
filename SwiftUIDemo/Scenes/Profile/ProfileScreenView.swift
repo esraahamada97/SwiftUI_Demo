@@ -66,6 +66,7 @@ struct ProfileScreenView: View {
                         }.frame(width: 345, height: 620)
                         .cornerRadius(16)
                         .offset( y:  -23)
+                        .shadow(color: Color(.shadowColor), radius: 4)
                        }
                    }
                    

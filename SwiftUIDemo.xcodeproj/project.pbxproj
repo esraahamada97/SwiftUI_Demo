@@ -22,6 +22,8 @@
 		CEC6C80525C82706004F44D3 /* 29LT Azer-Medium.OTF in Resources */ = {isa = PBXBuildFile; fileRef = CEC6C80325C82706004F44D3 /* 29LT Azer-Medium.OTF */; };
 		CEC6C80625C82706004F44D3 /* 29LT Azer-Regular.OTF in Resources */ = {isa = PBXBuildFile; fileRef = CEC6C80425C82706004F44D3 /* 29LT Azer-Regular.OTF */; };
 		CEC6C81125C8490F004F44D3 /* UserImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC6C81025C8490F004F44D3 /* UserImageView.swift */; };
+		CEC6C81A25C84E1D004F44D3 /* UserInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC6C81925C84E1D004F44D3 /* UserInfoView.swift */; };
+		CEC6C81F25C8580C004F44D3 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC6C81E25C8580C004F44D3 /* UserInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,8 @@
 		CEC6C80325C82706004F44D3 /* 29LT Azer-Medium.OTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "29LT Azer-Medium.OTF"; sourceTree = "<group>"; };
 		CEC6C80425C82706004F44D3 /* 29LT Azer-Regular.OTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "29LT Azer-Regular.OTF"; sourceTree = "<group>"; };
 		CEC6C81025C8490F004F44D3 /* UserImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserImageView.swift; sourceTree = "<group>"; };
+		CEC6C81925C84E1D004F44D3 /* UserInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoView.swift; sourceTree = "<group>"; };
+		CEC6C81E25C8580C004F44D3 /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +173,7 @@
 		CEC6C7F125C8239D004F44D3 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				CEC6C82325C85A57004F44D3 /* Locale */,
 				CEC6C7F325C823BD004F44D3 /* Fonts */,
 				CEC6C7F225C823B2004F44D3 /* Assets */,
 				CE83CC3825BFF8E400DA3DB1 /* Colors */,
@@ -233,8 +238,17 @@
 			children = (
 				CEC6C7F925C82435004F44D3 /* ProfileScreenView.swift */,
 				CEC6C81025C8490F004F44D3 /* UserImageView.swift */,
+				CEC6C81925C84E1D004F44D3 /* UserInfoView.swift */,
+				CEC6C81E25C8580C004F44D3 /* UserInfo.swift */,
 			);
 			path = Profile;
+			sourceTree = "<group>";
+		};
+		CEC6C82325C85A57004F44D3 /* Locale */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Locale;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -372,8 +386,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE83CC0625BFEB2B00DA3DB1 /* AppDelegate.swift in Sources */,
+				CEC6C81A25C84E1D004F44D3 /* UserInfoView.swift in Sources */,
 				CE83CC0825BFEB2B00DA3DB1 /* SceneDelegate.swift in Sources */,
 				CE83CC0A25BFEB2B00DA3DB1 /* ContentView.swift in Sources */,
+				CEC6C81F25C8580C004F44D3 /* UserInfo.swift in Sources */,
 				CEC6C81125C8490F004F44D3 /* UserImageView.swift in Sources */,
 				CE83CC5025BFFAC200DA3DB1 /* UIColor+Extension.swift in Sources */,
 				CEC6C7FA25C82435004F44D3 /* ProfileScreenView.swift in Sources */,

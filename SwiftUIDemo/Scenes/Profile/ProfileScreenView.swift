@@ -61,12 +61,11 @@ struct ProfileScreenView: View {
                            
                         
                         ZStack {
-                            Color(.primaryColor)
-                                            .ignoresSafeArea()
+                            Color(.primaryColor).ignoresSafeArea()
                             
-                               
-                                
-                                
+                                UserInfoView()
+                           
+                            
                             
                         }.frame(width: 345, height: 620)
                         .cornerRadius(16)

@@ -7,14 +7,19 @@
 
 import SwiftUI
 
+
 struct CardView: View {
     
      var cardData: CardData
     
+    
+    
     var body: some View {
-        
+    
         VStack {
-            Image(cardData.urlToImage)
+            
+            
+            Image("listimage")
                 .resizable()
                 .scaledToFill()
                 .aspectRatio(contentMode: .fit)
@@ -53,6 +58,7 @@ struct CardView: View {
         .frame( height: 400)
         .edgesIgnoringSafeArea(.all)
     }
+    
 }
 
 

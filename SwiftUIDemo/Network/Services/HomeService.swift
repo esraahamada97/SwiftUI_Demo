@@ -43,10 +43,8 @@ extension HomeService: TargetType {
         
         switch self {
         case .getArticles(let page):
-            return .requestParameters(parameters: [
-                                        "q": "egypt",
-                                        "from": "2021-02-20",
-                "api_key": NetworkManager.shared._networkConfig?.apiKey ?? "",
+            return .requestParameters(parameters: ["q": "egypt","from": "2021-02-20",
+                "apiKey": NetworkManager.shared._networkConfig?.apiKey ?? "",
                 "pageSize": 10,
                 "page": page], encoding: URLEncoding.default)
             

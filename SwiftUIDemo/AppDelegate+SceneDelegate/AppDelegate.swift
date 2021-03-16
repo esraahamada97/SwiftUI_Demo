@@ -14,9 +14,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+       initNetwork()
         return true
     }
-
+    func initNetwork() {
+        
+        let defaults = NetworkDefaults(baseUrl: "http://newsapi.org/v2",
+                                       apiKey: "bbb0fc310ea44afb88d8952e2c8bdbc5"
+        )
+        
+        NetworkManager.shared = NetworkManager(config: defaults)
+        
+        
+    }
     // MARK: UISceneSession Lifecycle
 
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {

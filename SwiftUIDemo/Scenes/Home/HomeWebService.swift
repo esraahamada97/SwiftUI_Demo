@@ -30,13 +30,11 @@ class HomeWebService: HomeWebServiceProtocol {
             endPoint: HomeService.getArticles(page: page)) { (result: Result<NetworkResponse<[CardData]>, NetworkError>, statusCode) in
             switch result {
             case .success(let listData):
-                //self.movies = Binding(listData.results ?? [])
-                // must send statuscode as property in model
-                //check the status code
+                
                 completion(Result.success(listData), nil)
             case .failure(let error):
                 print("error \(error)")
-                //error.statusCode = statusCode
+                
                 completion(Result.failure(error), statusCode)
             }
         }

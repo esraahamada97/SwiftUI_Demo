@@ -25,7 +25,8 @@ struct ContentView: View {
                         CardView(cardData: viewModel.articles[itemIndex])
                     }
                 }
-            }.padding()
+            }.onAppear(perform: viewModel.getArticles)
+            .padding()
             .padding(.top, 120)
             .edgesIgnoringSafeArea(.all)
             

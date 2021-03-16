@@ -33,7 +33,7 @@ class NetworkManager {
         
         let headerPlugin = StaticHeaderPlugin(
             headers: [
-                "Content-Type": "application/json; charset=utf-8"
+                "Accept": "*/*"
         ])
         
         

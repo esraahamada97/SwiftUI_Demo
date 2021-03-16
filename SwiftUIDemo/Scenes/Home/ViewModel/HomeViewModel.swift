@@ -21,6 +21,7 @@ class HomeViewModel: ObservableObject {
                 switch result {
                 case .success(let listData):
                     self.articles = listData.articles ?? []
+                    
                 case .failure(let error):
                     print("error \(error)")
                 }

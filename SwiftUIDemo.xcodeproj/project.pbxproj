@@ -18,6 +18,7 @@
 		CE83CC4225BFF91500DA3DB1 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE83CC4125BFF91500DA3DB1 /* Colors.xcassets */; };
 		CE83CC5025BFFAC200DA3DB1 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE83CC4F25BFFAC200DA3DB1 /* UIColor+Extension.swift */; };
 		CED6AE152600742D00C4F8E4 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED6AE142600742D00C4F8E4 /* CardView.swift */; };
+		CED6AE202600798A00C4F8E4 /* CardData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED6AE1F2600798A00C4F8E4 /* CardData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		CE83CC4125BFF91500DA3DB1 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		CE83CC4F25BFFAC200DA3DB1 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		CED6AE142600742D00C4F8E4 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		CED6AE1F2600798A00C4F8E4 /* CardData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,10 +197,35 @@
 		CED6AE132600741000C4F8E4 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				CED6AE1E2600796400C4F8E4 /* ViewModel */,
+				CED6AE1D2600795C00C4F8E4 /* Model */,
+				CED6AE1C2600794E00C4F8E4 /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		CED6AE1C2600794E00C4F8E4 /* View */ = {
+			isa = PBXGroup;
+			children = (
 				CE83CC0925BFEB2B00DA3DB1 /* ContentView.swift */,
 				CED6AE142600742D00C4F8E4 /* CardView.swift */,
 			);
-			path = Home;
+			path = View;
+			sourceTree = "<group>";
+		};
+		CED6AE1D2600795C00C4F8E4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CED6AE1F2600798A00C4F8E4 /* CardData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CED6AE1E2600796400C4F8E4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -335,6 +362,7 @@
 				CE83CC0625BFEB2B00DA3DB1 /* AppDelegate.swift in Sources */,
 				CE83CC0825BFEB2B00DA3DB1 /* SceneDelegate.swift in Sources */,
 				CE83CC0A25BFEB2B00DA3DB1 /* ContentView.swift in Sources */,
+				CED6AE202600798A00C4F8E4 /* CardData.swift in Sources */,
 				CE83CC5025BFFAC200DA3DB1 /* UIColor+Extension.swift in Sources */,
 				CED6AE152600742D00C4F8E4 /* CardView.swift in Sources */,
 			);

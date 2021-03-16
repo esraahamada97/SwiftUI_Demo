@@ -8,23 +8,28 @@
 import SwiftUI
 
 struct CardView: View {
+    @Binding var cardData: CardData
+    
+
+    
     var body: some View {
         
         VStack {
-                  Image("listimage")
+            Image(cardData.image)
                       .resizable()
                       .aspectRatio(contentMode: .fit)
-       
+                .frame(height: 300)
+Spacer()
                   HStack {
                       VStack(alignment: .leading) {
-                          Text("SwiftUI")
+                        Text(cardData.category)
                               .font(.subheadline)
                               .foregroundColor(.secondary)
-                          Text("Drawing a Border with Rounded Corners")
+                        Text(cardData.heading)
                               .font(.title3)
                             .fontWeight(.semibold)
                               .foregroundColor(.primary)
-                          Text("Written by Simon Ng")
+                        Text(cardData.author)
                               .font(.caption)
                               .foregroundColor(.secondary)
                             .multilineTextAlignment(.leading)
@@ -36,18 +41,23 @@ struct CardView: View {
                   }
                   .padding()
               }
-              .cornerRadius(10)
-              .overlay(
-                  RoundedRectangle(cornerRadius: 10)
-                      .stroke(Color(.sRGB, red: 150/255, green: 150/255, blue: 150/255, opacity: 0.1), lineWidth: 1)
-              )
-              .padding([.top, .horizontal])
         
+        .cornerRadius(10)
+        .overlay(
+                            RoundedRectangle(cornerRadius: 10)
+                                .stroke(Color(.sRGB, red: 150/255, green: 150/255, blue: 150/255, opacity: 0.1), lineWidth: 1)
+                                .frame( height: 400)
+                        )
+              ///.padding([.top, .horizontal])
+        //.fixedSize(horizontal: false, vertical: true)
+                .shadow(color: Color.black.opacity(0.2), radius: 5, x: 0, y: 2)
+        .frame( height: 400)
+        .edgesIgnoringSafeArea(.all)
     }
 }
 
-struct CardView_Previews: PreviewProvider {
-    static var previews: some View {
-        CardView()
-    }
-}
+//struct CardView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        CardView(cardData: $cardData)
+//    }
+//}

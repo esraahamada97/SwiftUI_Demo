@@ -9,12 +9,12 @@ import SwiftUI
 
 struct CardView: View {
     
-    @Binding var cardData: CardData
+     var cardData: CardData
     
     var body: some View {
         
         VStack {
-            Image(cardData.image)
+            Image(cardData.urlToImage)
                 .resizable()
                 .scaledToFill()
                 .aspectRatio(contentMode: .fit)
@@ -23,14 +23,14 @@ struct CardView: View {
             Spacer()
             HStack {
                 VStack(alignment: .leading) {
-                    Text(cardData.category)
+                    Text(cardData.source.name)
                         .font(.subheadline)
                         .foregroundColor(.secondary)
-                    Text(cardData.heading)
+                    Text(cardData.title)
                         .font(.title3)
                         .fontWeight(.semibold)
                         .foregroundColor(.primary)
-                    Text(cardData.author)
+                    Text(cardData.description)
                         .font(.caption)
                         .foregroundColor(.secondary)
                         .multilineTextAlignment(.leading)

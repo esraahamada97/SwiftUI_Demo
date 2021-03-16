@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		460805F7723528D12C8174F4 /* Pods_SwiftUIDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 991C02A795A27D02B2E4BCAA /* Pods_SwiftUIDemo.framework */; };
 		CE83CC0625BFEB2B00DA3DB1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE83CC0525BFEB2B00DA3DB1 /* AppDelegate.swift */; };
 		CE83CC0825BFEB2B00DA3DB1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE83CC0725BFEB2B00DA3DB1 /* SceneDelegate.swift */; };
 		CE83CC0A25BFEB2B00DA3DB1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE83CC0925BFEB2B00DA3DB1 /* ContentView.swift */; };
@@ -20,6 +21,14 @@
 		CED6AE152600742D00C4F8E4 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED6AE142600742D00C4F8E4 /* CardView.swift */; };
 		CED6AE202600798A00C4F8E4 /* CardData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED6AE1F2600798A00C4F8E4 /* CardData.swift */; };
 		CED6AE2526009EC600C4F8E4 /* NoSeparatorList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED6AE2426009EC600C4F8E4 /* NoSeparatorList.swift */; };
+		CED6AE3E2600BDAC00C4F8E4 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED6AE3D2600BDAC00C4F8E4 /* NetworkManager.swift */; };
+		CED6AE432600BDED00C4F8E4 /* NetworkDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED6AE422600BDED00C4F8E4 /* NetworkDefaults.swift */; };
+		CED6AE482600BE2B00C4F8E4 /* NetworkManager+Parsejson.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED6AE472600BE2B00C4F8E4 /* NetworkManager+Parsejson.swift */; };
+		CED6AE542600BF1300C4F8E4 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED6AE532600BF1300C4F8E4 /* NetworkError.swift */; };
+		CED6AE592600C95B00C4F8E4 /* NetworkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED6AE582600C95B00C4F8E4 /* NetworkResponse.swift */; };
+		CED6AE662600CC6F00C4F8E4 /* HomeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED6AE652600CC6F00C4F8E4 /* HomeService.swift */; };
+		CED6AE6B2600CF7800C4F8E4 /* HomeWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED6AE6A2600CF7800C4F8E4 /* HomeWebService.swift */; };
+		CED6AE702600D0A600C4F8E4 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED6AE6F2600D0A600C4F8E4 /* HomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +49,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8D5EBFD571B817D0F6D62589 /* Pods-SwiftUIDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUIDemo.release.xcconfig"; path = "Target Support Files/Pods-SwiftUIDemo/Pods-SwiftUIDemo.release.xcconfig"; sourceTree = "<group>"; };
+		991C02A795A27D02B2E4BCAA /* Pods_SwiftUIDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftUIDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEDD870340E68406419E7F03 /* Pods-SwiftUIDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUIDemo.debug.xcconfig"; path = "Target Support Files/Pods-SwiftUIDemo/Pods-SwiftUIDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		CE83CC0225BFEB2B00DA3DB1 /* SwiftUIDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE83CC0525BFEB2B00DA3DB1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE83CC0725BFEB2B00DA3DB1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +71,14 @@
 		CED6AE142600742D00C4F8E4 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		CED6AE1F2600798A00C4F8E4 /* CardData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardData.swift; sourceTree = "<group>"; };
 		CED6AE2426009EC600C4F8E4 /* NoSeparatorList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoSeparatorList.swift; sourceTree = "<group>"; };
+		CED6AE3D2600BDAC00C4F8E4 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		CED6AE422600BDED00C4F8E4 /* NetworkDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDefaults.swift; sourceTree = "<group>"; };
+		CED6AE472600BE2B00C4F8E4 /* NetworkManager+Parsejson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NetworkManager+Parsejson.swift"; sourceTree = "<group>"; };
+		CED6AE532600BF1300C4F8E4 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		CED6AE582600C95B00C4F8E4 /* NetworkResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResponse.swift; sourceTree = "<group>"; };
+		CED6AE652600CC6F00C4F8E4 /* HomeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeService.swift; sourceTree = "<group>"; };
+		CED6AE6A2600CF7800C4F8E4 /* HomeWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWebService.swift; sourceTree = "<group>"; };
+		CED6AE6F2600D0A600C4F8E4 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				460805F7723528D12C8174F4 /* Pods_SwiftUIDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +107,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5CE1E4B4D67737BC4155F84D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AEDD870340E68406419E7F03 /* Pods-SwiftUIDemo.debug.xcconfig */,
+				8D5EBFD571B817D0F6D62589 /* Pods-SwiftUIDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B5D6578408E5BC14CEAB9705 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				991C02A795A27D02B2E4BCAA /* Pods_SwiftUIDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CE83CBF925BFEB2B00DA3DB1 = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +131,8 @@
 				CE83CC1B25BFEB2D00DA3DB1 /* SwiftUIDemoTests */,
 				CE83CC2625BFEB2E00DA3DB1 /* SwiftUIDemoUITests */,
 				CE83CC0325BFEB2B00DA3DB1 /* Products */,
+				5CE1E4B4D67737BC4155F84D /* Pods */,
+				B5D6578408E5BC14CEAB9705 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -114,6 +154,7 @@
 				CED6AE0B260072BC00C4F8E4 /* AppDelegate+SceneDelegate */,
 				CE83CC4625BFFA6900DA3DB1 /* Extensions */,
 				CED6AE0E2600734F00C4F8E4 /* Resourses */,
+				CED6AE2F2600BC9E00C4F8E4 /* Network */,
 				CED6AE0F2600737200C4F8E4 /* Scenes */,
 				CE83CC0D25BFEB2D00DA3DB1 /* Preview Content */,
 			);
@@ -202,6 +243,7 @@
 				CED6AE1E2600796400C4F8E4 /* ViewModel */,
 				CED6AE1D2600795C00C4F8E4 /* Model */,
 				CED6AE1C2600794E00C4F8E4 /* View */,
+				CED6AE6A2600CF7800C4F8E4 /* HomeWebService.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -227,8 +269,38 @@
 		CED6AE1E2600796400C4F8E4 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				CED6AE6F2600D0A600C4F8E4 /* HomeViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CED6AE2F2600BC9E00C4F8E4 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				CED6AE642600CC5E00C4F8E4 /* Services */,
+				CED6AE522600BEFC00C4F8E4 /* Models */,
+				CED6AE3D2600BDAC00C4F8E4 /* NetworkManager.swift */,
+				CED6AE422600BDED00C4F8E4 /* NetworkDefaults.swift */,
+				CED6AE472600BE2B00C4F8E4 /* NetworkManager+Parsejson.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		CED6AE522600BEFC00C4F8E4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CED6AE532600BF1300C4F8E4 /* NetworkError.swift */,
+				CED6AE582600C95B00C4F8E4 /* NetworkResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CED6AE642600CC5E00C4F8E4 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CED6AE652600CC6F00C4F8E4 /* HomeService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,9 +310,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE83CC2C25BFEB2E00DA3DB1 /* Build configuration list for PBXNativeTarget "SwiftUIDemo" */;
 			buildPhases = (
+				56E72445D4D1C9D40822839C /* [CP] Check Pods Manifest.lock */,
 				CE83CBFE25BFEB2B00DA3DB1 /* Sources */,
 				CE83CBFF25BFEB2B00DA3DB1 /* Frameworks */,
 				CE83CC0025BFEB2B00DA3DB1 /* Resources */,
+				FB384F6B9ED874C5DFE40681 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -357,17 +431,67 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		56E72445D4D1C9D40822839C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftUIDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB384F6B9ED874C5DFE40681 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftUIDemo/Pods-SwiftUIDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftUIDemo/Pods-SwiftUIDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwiftUIDemo/Pods-SwiftUIDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CE83CBFE25BFEB2B00DA3DB1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				CE83CC0625BFEB2B00DA3DB1 /* AppDelegate.swift in Sources */,
+				CED6AE432600BDED00C4F8E4 /* NetworkDefaults.swift in Sources */,
 				CE83CC0825BFEB2B00DA3DB1 /* SceneDelegate.swift in Sources */,
+				CED6AE6B2600CF7800C4F8E4 /* HomeWebService.swift in Sources */,
 				CE83CC0A25BFEB2B00DA3DB1 /* ContentView.swift in Sources */,
 				CED6AE202600798A00C4F8E4 /* CardData.swift in Sources */,
+				CED6AE592600C95B00C4F8E4 /* NetworkResponse.swift in Sources */,
+				CED6AE3E2600BDAC00C4F8E4 /* NetworkManager.swift in Sources */,
 				CED6AE2526009EC600C4F8E4 /* NoSeparatorList.swift in Sources */,
+				CED6AE662600CC6F00C4F8E4 /* HomeService.swift in Sources */,
 				CE83CC5025BFFAC200DA3DB1 /* UIColor+Extension.swift in Sources */,
+				CED6AE482600BE2B00C4F8E4 /* NetworkManager+Parsejson.swift in Sources */,
+				CED6AE542600BF1300C4F8E4 /* NetworkError.swift in Sources */,
+				CED6AE702600D0A600C4F8E4 /* HomeViewModel.swift in Sources */,
 				CED6AE152600742D00C4F8E4 /* CardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -533,6 +657,7 @@
 		};
 		CE83CC2D25BFEB2E00DA3DB1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AEDD870340E68406419E7F03 /* Pods-SwiftUIDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -554,6 +679,7 @@
 		};
 		CE83CC2E25BFEB2E00DA3DB1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D5EBFD571B817D0F6D62589 /* Pods-SwiftUIDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

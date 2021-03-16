@@ -9,14 +9,21 @@ import SwiftUI
 
 struct ContentView: View {
     
-    
-    @State var items: [CardData]
+    @StateObject var viewModel: HomeViewModel
+        
+        init(viewModel: HomeViewModel = .init()) {
+            _viewModel = StateObject(wrappedValue: viewModel)
+        }
+
     
     var body: some View {
         NavigationView {
             NoSepratorList {
-                ForEach(0..<3) { itemIndex in
-                    CardView(cardData: self.$items[itemIndex])
+                
+                ForEach(0..<viewModel.articles.count) { itemIndex in
+                    NavigationLink(destination: EmptyView()) {
+                        CardView(cardData: viewModel.articles[itemIndex])
+                    }
                 }
             }.padding()
             .padding(.top, 120)
@@ -43,7 +50,7 @@ struct ContentView: View {
                         .clipShape(Circle())
                         .overlay(Circle().stroke(Color.white, lineWidth: 4))
                         .shadow(radius: 10)
-                )
+            )
             
         }.padding(.bottom, 10)
         
@@ -53,6 +60,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView(items: CardData.testData)
+        ContentView()
     }
 }

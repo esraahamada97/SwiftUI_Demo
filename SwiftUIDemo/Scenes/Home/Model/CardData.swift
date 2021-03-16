@@ -7,22 +7,31 @@
 
 import Foundation
 
-struct CardData: Identifiable  {
-    let id = UUID()
-    var image: String
-    var category: String
-    var heading: String
-    var author: String
-}
-
-extension CardData {
-    static var testData: [CardData] {
-        return [
-            CardData(image: "listimage", category: "SwiftUI", heading: "Drawing a Border with Rounded Corners", author: "Written by Simon Ng"),
-            CardData(image: "listimage", category: "SwiftUI", heading: "Drawing a Border with Rounded Corners", author: "Written by Simon Ng"),
-            CardData(image: "listimage", category: "SwiftUI", heading: "Drawing a Border with Rounded Corners", author: "Written by Simon Ng"),
-            CardData(image: "listimage", category: "SwiftUI", heading: "Drawing a Border with Rounded Corners", author: "Written by Simon Ng")
-            
-        ]
+struct CardData: Identifiable, Codable  {
+    var id = UUID()
+    var source: SourceModel
+    var title: String
+    var description: String
+    var urlToImage: String
+    
+    enum CodingKeys: CodingKey {
+        case source
+        case title
+        case description
+        case urlToImage
+       
     }
 }
+
+
+struct SourceModel: Codable {
+    var id: String
+    var name: String
+    
+    enum CodingKeys: CodingKey {
+        case id
+        case name
+       
+    }
+}
+

@@ -17,6 +17,7 @@
 		CE83CC2825BFEB2E00DA3DB1 /* SwiftUIDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE83CC2725BFEB2E00DA3DB1 /* SwiftUIDemoUITests.swift */; };
 		CE83CC4225BFF91500DA3DB1 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE83CC4125BFF91500DA3DB1 /* Colors.xcassets */; };
 		CE83CC5025BFFAC200DA3DB1 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE83CC4F25BFFAC200DA3DB1 /* UIColor+Extension.swift */; };
+		CED6AE152600742D00C4F8E4 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED6AE142600742D00C4F8E4 /* CardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		CE83CC2925BFEB2E00DA3DB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE83CC4125BFF91500DA3DB1 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		CE83CC4F25BFFAC200DA3DB1 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		CED6AE142600742D00C4F8E4 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,14 +105,12 @@
 		CE83CC0425BFEB2B00DA3DB1 /* SwiftUIDemo */ = {
 			isa = PBXGroup;
 			children = (
-				CE83CC4625BFFA6900DA3DB1 /* Extensions */,
-				CE83CC3825BFF8E400DA3DB1 /* Colors */,
-				CE83CC0525BFEB2B00DA3DB1 /* AppDelegate.swift */,
-				CE83CC0725BFEB2B00DA3DB1 /* SceneDelegate.swift */,
-				CE83CC0925BFEB2B00DA3DB1 /* ContentView.swift */,
-				CE83CC0B25BFEB2D00DA3DB1 /* Assets.xcassets */,
-				CE83CC1025BFEB2D00DA3DB1 /* LaunchScreen.storyboard */,
 				CE83CC1325BFEB2D00DA3DB1 /* Info.plist */,
+				CE83CC1025BFEB2D00DA3DB1 /* LaunchScreen.storyboard */,
+				CED6AE0B260072BC00C4F8E4 /* AppDelegate+SceneDelegate */,
+				CE83CC4625BFFA6900DA3DB1 /* Extensions */,
+				CED6AE0E2600734F00C4F8E4 /* Resourses */,
+				CED6AE0F2600737200C4F8E4 /* Scenes */,
 				CE83CC0D25BFEB2D00DA3DB1 /* Preview Content */,
 			);
 			path = SwiftUIDemo;
@@ -156,6 +156,49 @@
 				CE83CC4F25BFFAC200DA3DB1 /* UIColor+Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CED6AE0B260072BC00C4F8E4 /* AppDelegate+SceneDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				CE83CC0525BFEB2B00DA3DB1 /* AppDelegate.swift */,
+				CE83CC0725BFEB2B00DA3DB1 /* SceneDelegate.swift */,
+			);
+			path = "AppDelegate+SceneDelegate";
+			sourceTree = "<group>";
+		};
+		CED6AE0D2600730700C4F8E4 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				CE83CC0B25BFEB2D00DA3DB1 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		CED6AE0E2600734F00C4F8E4 /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+				CE83CC3825BFF8E400DA3DB1 /* Colors */,
+				CED6AE0D2600730700C4F8E4 /* Assets */,
+			);
+			path = Resourses;
+			sourceTree = "<group>";
+		};
+		CED6AE0F2600737200C4F8E4 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				CED6AE132600741000C4F8E4 /* Home */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		CED6AE132600741000C4F8E4 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				CE83CC0925BFEB2B00DA3DB1 /* ContentView.swift */,
+				CED6AE142600742D00C4F8E4 /* CardView.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -293,6 +336,7 @@
 				CE83CC0825BFEB2B00DA3DB1 /* SceneDelegate.swift in Sources */,
 				CE83CC0A25BFEB2B00DA3DB1 /* ContentView.swift in Sources */,
 				CE83CC5025BFFAC200DA3DB1 /* UIColor+Extension.swift in Sources */,
+				CED6AE152600742D00C4F8E4 /* CardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

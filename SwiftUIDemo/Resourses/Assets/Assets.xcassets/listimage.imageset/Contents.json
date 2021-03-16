@@ -1,17 +1,15 @@
 {
   "images" : [
     {
-      "filename" : "ic_Monshaat-Logo.png",
+      "filename" : "70d58ea1a4e94431ed6c068878fa5ae2.jpg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "ic_Monshaat-Logo@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "ic_Monshaat-Logo@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

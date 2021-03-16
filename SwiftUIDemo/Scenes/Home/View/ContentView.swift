@@ -19,12 +19,33 @@ struct ContentView: View {
                     CardView(cardData: self.$items[itemIndex])
                 }
             }.padding()
-            .padding(.top, 150)
+            .padding(.top, 120)
             .edgesIgnoringSafeArea(.all)
             
-            .navigationTitle("esraa")
+            .navigationBarItems(
+                    leading:
+                        VStack {
+                            Text("tuesday,16 mar")
+                                .font(.footnote)
+                                .fontWeight(.light)
+                                .foregroundColor(.secondary)
+                            
+                            Text("Today")
+                                .font(.title2)
+                                .fontWeight(.bold)
+                                .foregroundColor(.black)
+                            
+                        },
+                    trailing:
+                        Image("logo")
+                        .resizable()
+                        .frame(width: 50, height: 50)
+                        .clipShape(Circle())
+                        .overlay(Circle().stroke(Color.white, lineWidth: 4))
+                        .shadow(radius: 10)
+                )
             
-        }
+        }.padding(.bottom, 10)
         
         .ignoresSafeArea()
     }

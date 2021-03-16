@@ -19,7 +19,7 @@ struct NoSepratorList<Content>: View where Content: View {
     var body: some View {
         if #available(iOS 14.0, *) {
             ScrollView {
-                LazyVStack(spacing: 50) {
+                LazyVStack(spacing: 40) {
                     self.content()
                 }
             }

@@ -8,16 +8,25 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    
     @State var items: [CardData]
     
     var body: some View {
-        List(items.indices) { itemIndex in
-            CardView(cardData: self.$items[itemIndex])
+        NavigationView {
+            NoSepratorList {
+                ForEach(0..<3) { itemIndex in
+                    CardView(cardData: self.$items[itemIndex])
                 }
-                .padding(EdgeInsets(top: 44, leading: 0, bottom: 24, trailing: 0))
-                .edgesIgnoringSafeArea(.all)
+            }.padding()
+            .padding(.top, 150)
+            .edgesIgnoringSafeArea(.all)
+            
+            .navigationTitle("esraa")
+            
+        }
         
-       
+        .ignoresSafeArea()
     }
 }
 

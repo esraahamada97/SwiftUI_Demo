@@ -6,25 +6,30 @@
 //
 
 import SwiftUI
-
+import Kingfisher
 
 struct CardView: View {
-    
      var cardData: Article
     
-    
-    
     var body: some View {
-    
+        let url = URL(string: cardData.urlToImage ?? "")
+        
         VStack {
             
             
-            Image("listimage")
-                .resizable()
+            KFImage(url)
+                .placeholder {
+                   
+                    Image("listimage")
+                        .resizable()
+                        .scaledToFill()
+                        .aspectRatio(contentMode: .fill)
+                        .opacity(0.3)
+                    
+                }.resizable()
                 .scaledToFill()
-                .aspectRatio(contentMode: .fit)
-            //.frame(height: 180)
-            
+                .aspectRatio(contentMode: /*@START_MENU_TOKEN@*/.fill/*@END_MENU_TOKEN@*/)
+                
             Spacer()
             HStack {
                 VStack(alignment: .leading) {
@@ -52,10 +57,10 @@ struct CardView: View {
         .overlay(
             RoundedRectangle(cornerRadius: 10)
                 .stroke(Color(.sRGB, red: 150/255, green: 150/255, blue: 150/255, opacity: 0.1), lineWidth: 1)
-                .frame( height: 400)
+                
         )
         .shadow(color: Color.black.opacity(0.2), radius: 5, x: 0, y: 2)
-        .frame( height: 400)
+    
         .edgesIgnoringSafeArea(.all)
     }
     

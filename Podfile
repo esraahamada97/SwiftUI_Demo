@@ -7,5 +7,5 @@ target 'SwiftUIDemo' do
 
   # Pods for SwiftUIDemo
   pod 'Moya'
-pod 'AlamofireImage'
+pod 'Kingfisher', '~> 6.0'
 end

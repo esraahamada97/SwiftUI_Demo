@@ -6,11 +6,12 @@
 //
 
 import SwiftUI
+import Kingfisher
 
 struct ContentView: View {
     
     @StateObject var viewModel: HomeViewModel
-        
+    
         init(viewModel: HomeViewModel = .init()) {
             _viewModel = StateObject(wrappedValue: viewModel)
         }
@@ -21,8 +22,12 @@ struct ContentView: View {
             NoSepratorList {
                 
                 ForEach(0..<viewModel.articles.count, id: \.self) { itemIndex in
+                    
                     NavigationLink(destination: EmptyView()) {
+                                            
                         CardView(cardData: viewModel.articles[itemIndex])
+                        
+                        
                     }
                 }
             }.onAppear(perform: viewModel.getArticles)

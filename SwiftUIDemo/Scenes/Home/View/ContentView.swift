@@ -20,7 +20,7 @@ struct ContentView: View {
         NavigationView {
             NoSepratorList {
                 
-                ForEach(0..<viewModel.articles.count) { itemIndex in
+                ForEach(0..<viewModel.articles.count, id: \.self) { itemIndex in
                     NavigationLink(destination: EmptyView()) {
                         CardView(cardData: viewModel.articles[itemIndex])
                     }

@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func initNetwork() {
         
         let defaults = NetworkDefaults(baseUrl: "http://newsapi.org/v2",
-                                       apiKey: "bbb0fc310ea44afb88d8952e2c8bdbc5"
+                                       apiKey: "552f94a263ac44f183b00e30bf48f6c1"
         )
         
         NetworkManager.shared = NetworkManager(config: defaults)

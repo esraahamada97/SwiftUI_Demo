@@ -7,7 +7,7 @@
 
 import Foundation
 class HomeViewModel: ObservableObject {
-        @Published var articles = [CardData]()
+        @Published var articles = [Article]()
         
         let homeService: HomeWebServiceProtocol
         
@@ -17,7 +17,7 @@ class HomeViewModel: ObservableObject {
         
     
         func getArticles() {
-            homeService.getArticles(page: 1) { ( result: Result<NetworkResponse<[CardData]>, NetworkError>, _) in
+            homeService.getArticles(page: 1) { ( result: Result<NetworkResponse<[Article]>, NetworkError>, _) in
                 switch result {
                 case .success(let listData):
                     self.articles = listData.articles ?? []

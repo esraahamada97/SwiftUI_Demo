@@ -10,7 +10,7 @@ import SwiftUI
 
 struct CardView: View {
     
-     var cardData: CardData
+     var cardData: Article
     
     
     
@@ -28,14 +28,14 @@ struct CardView: View {
             Spacer()
             HStack {
                 VStack(alignment: .leading) {
-                    Text(cardData.source.name)
+                    Text(cardData.source?.name ?? "")
                         .font(.subheadline)
                         .foregroundColor(.secondary)
-                    Text(cardData.title)
+                    Text(cardData.title ?? "")
                         .font(.title3)
                         .fontWeight(.semibold)
                         .foregroundColor(.primary)
-                    Text(cardData.description)
+                    Text(cardData.description ?? "")
                         .font(.caption)
                         .foregroundColor(.secondary)
                         .multilineTextAlignment(.leading)

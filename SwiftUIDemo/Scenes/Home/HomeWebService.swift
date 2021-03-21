@@ -11,7 +11,7 @@ protocol HomeWebServiceProtocol: class {
     
     func getArticles(page: Int,
                           completion: @escaping(
-        _ result: Swift.Result<NetworkResponse<[CardData]>,
+        _ result: Swift.Result<NetworkResponse<[Article]>,
         NetworkError>,
         _ statusCode: Int?) -> Void)
     
@@ -24,10 +24,10 @@ class HomeWebService: HomeWebServiceProtocol {
     
     func getArticles(
         page: Int,
-        completion: @escaping (Result<NetworkResponse<[CardData]>, NetworkError>, Int?) -> Void) {
+        completion: @escaping (Result<NetworkResponse<[Article]>, NetworkError>, Int?) -> Void) {
         
         NetworkManager.shared.fetch(
-            endPoint: HomeService.getArticles(page: page)) { (result: Result<NetworkResponse<[CardData]>, NetworkError>, statusCode) in
+            endPoint: HomeService.getArticles(page: page)) { (result: Result<NetworkResponse<[Article]>, NetworkError>, statusCode) in
             switch result {
             case .success(let listData):
                 

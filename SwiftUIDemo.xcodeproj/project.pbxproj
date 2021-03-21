@@ -19,6 +19,7 @@
 		CE83CC4225BFF91500DA3DB1 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE83CC4125BFF91500DA3DB1 /* Colors.xcassets */; };
 		CE83CC5025BFFAC200DA3DB1 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE83CC4F25BFFAC200DA3DB1 /* UIColor+Extension.swift */; };
 		CEC88AA6260762FB00360625 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC88AA5260762FB00360625 /* Article.swift */; };
+		CEC88ABB260786F900360625 /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC88ABA260786F900360625 /* DetailsView.swift */; };
 		CED6AE152600742D00C4F8E4 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED6AE142600742D00C4F8E4 /* CardView.swift */; };
 		CED6AE2526009EC600C4F8E4 /* NoSeparatorList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED6AE2426009EC600C4F8E4 /* NoSeparatorList.swift */; };
 		CED6AE3E2600BDAC00C4F8E4 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED6AE3D2600BDAC00C4F8E4 /* NetworkManager.swift */; };
@@ -69,6 +70,7 @@
 		CE83CC4125BFF91500DA3DB1 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		CE83CC4F25BFFAC200DA3DB1 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		CEC88AA5260762FB00360625 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		CEC88ABA260786F900360625 /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
 		CED6AE142600742D00C4F8E4 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		CED6AE2426009EC600C4F8E4 /* NoSeparatorList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoSeparatorList.swift; sourceTree = "<group>"; };
 		CED6AE3D2600BDAC00C4F8E4 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
@@ -203,6 +205,22 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		CEC88AB8260786D000360625 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				CEC88AB9260786DF00360625 /* View */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		CEC88AB9260786DF00360625 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CEC88ABA260786F900360625 /* DetailsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		CED6AE0B260072BC00C4F8E4 /* AppDelegate+SceneDelegate */ = {
 			isa = PBXGroup;
 			children = (
@@ -232,6 +250,7 @@
 		CED6AE0F2600737200C4F8E4 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				CEC88AB8260786D000360625 /* Details */,
 				CED6AE132600741000C4F8E4 /* Home */,
 			);
 			path = Scenes;
@@ -491,6 +510,7 @@
 				CED6AE482600BE2B00C4F8E4 /* NetworkManager+Parsejson.swift in Sources */,
 				CED6AE542600BF1300C4F8E4 /* NetworkError.swift in Sources */,
 				CED6AE702600D0A600C4F8E4 /* HomeViewModel.swift in Sources */,
+				CEC88ABB260786F900360625 /* DetailsView.swift in Sources */,
 				CED6AE152600742D00C4F8E4 /* CardView.swift in Sources */,
 				CEC88AA6260762FB00360625 /* Article.swift in Sources */,
 			);
